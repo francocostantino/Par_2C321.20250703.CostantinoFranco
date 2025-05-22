@@ -1,6 +1,7 @@
 package par_1c321.pkg20250522.francocostantino;
 
 // proyecto -> git -> add
+import java.util.Collections;
 import java.util.Scanner;
 
 //proyecto -> git  -> commit
@@ -21,8 +22,8 @@ public class SistemaExpedicionesEspaciales {
             System.out.println("1. Agregar nave ");
             System.out.println("2. Mostrar todas las naves ");
             System.out.println("3. Iniciar exploracion");
-            System.out.println("4. Mostrar naves ordenadas por nombre");
-            System.out.println("5. Mostrar naves ordenadas por año de lanzamiento(desc)");
+            System.out.println("4. Mostrar naves ordenadas por año de lanzamiento(desc)");
+            System.out.println("5. Mostrar naves ordenadas por nombre");
             System.out.println("6. Mostrar naves ordenadas por tripulacion (desc)");
             System.out.println("0. Salir");
             System.out.println("Seleccione una opcion: ");
@@ -99,11 +100,14 @@ public class SistemaExpedicionesEspaciales {
                 case 3: // Iniciar exploracion
                     lista.iniciarExploracion();
                     break;
-                case 4: //Mostrar naves ordenadas por nombre
-
+                case 4: //Mostrar naves ordenadas por año
+                    Collections.sort(lista.getNaves());
                     break;
-                case 5:
-
+                case 5: //" Mostrar naves ordenadas por nombre"
+                    Collections.sort(lista.getNaves(), new ComparadorNombre());
+                    break;
+                case 6: //6. Mostrar naves ordenadas por tripulacion (desc)
+                    
                     break;
                 case 0:
                     System.out.println("cerrando programa....");

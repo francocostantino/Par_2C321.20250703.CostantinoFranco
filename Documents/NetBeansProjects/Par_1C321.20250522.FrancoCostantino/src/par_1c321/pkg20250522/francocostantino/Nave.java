@@ -3,7 +3,7 @@ package par_1c321.pkg20250522.francocostantino;
 
 
 
-public abstract class Nave {
+public abstract class Nave implements Comparable<Nave>{
 private String nombre;
 private int capacidadTripulacion;
 private int anioLanzamiento;
@@ -43,7 +43,16 @@ private int anioLanzamiento;
         return "nave {" + "nombre: " + this.nombre + " capacidad de tripulacion: " + this.capacidadTripulacion + " anio de lanzamiento: " + this.anioLanzamiento;
     }
 
-
+@Override
+public int compareTo(Nave dos){
+    if (this.anioLanzamiento < dos.getAnioLanzamiento()){
+        return 1;
+    } else if (this.anioLanzamiento == dos.getAnioLanzamiento()){
+        return 0 ;
+    } else {
+        return -1;
+    }
+}
 
 
 }
