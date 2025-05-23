@@ -12,7 +12,9 @@ private int cantidadPasajeros;
     }
 
 
-
-
+@Override
+    public String toString() {
+        return "crucero " + super.toString() + " cantidad de pasajeros: " + this.cantidadPasajeros ;
+    }
 
 }

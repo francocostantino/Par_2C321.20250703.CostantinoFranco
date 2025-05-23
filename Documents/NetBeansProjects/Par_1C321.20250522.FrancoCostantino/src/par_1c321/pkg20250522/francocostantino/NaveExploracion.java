@@ -15,5 +15,8 @@ public class NaveExploracion extends Nave implements Exploradores{
    }
     
     
-   
+   @Override
+    public String toString() {
+        return "nave de exploracion " + super.toString() + " tipo de mision: " + this.tipoMision ;
+    }
 }

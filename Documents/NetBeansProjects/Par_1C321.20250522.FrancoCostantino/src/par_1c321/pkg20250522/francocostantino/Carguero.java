@@ -28,6 +28,9 @@ public void cargar(int kilos){
    public void iniciarExploracion(){
        System.out.println("comenzando la xploracion");
    }
-
+@Override
+    public String toString() {
+        return "Carguero " + super.toString() + " capacidad de carga: " + this.capacidadCarga ;
+    }
 
 }

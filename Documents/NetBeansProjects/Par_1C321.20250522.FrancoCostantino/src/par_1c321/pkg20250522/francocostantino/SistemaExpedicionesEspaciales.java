@@ -62,7 +62,7 @@ public class SistemaExpedicionesEspaciales {
                             break;
 
                         case 2:
-                            System.out.println("capacidad de carga? : ");
+                            System.out.println("capacidad de carga? entre 100 y 500 : ");
                             int capacidadCarga = input.nextInt();
                             input.nextLine();
                             System.out.println("nombre : ");
