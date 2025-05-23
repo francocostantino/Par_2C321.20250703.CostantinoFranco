@@ -30,7 +30,7 @@ public void cargar(int kilos){
    }
 @Override
     public String toString() {
-        return "Carguero " + super.toString() + " capacidad de carga: " + this.capacidadCarga ;
+        return "Carguero " + super.toString() + ", capacidad de carga: " + this.capacidadCarga ;
     }
 
 }

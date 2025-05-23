@@ -40,7 +40,7 @@ private int anioLanzamiento;
 
     @Override
     public String toString() {
-        return "nave {" + "nombre: " + this.nombre + " capacidad de tripulacion: " + this.capacidadTripulacion + " anio de lanzamiento: " + this.anioLanzamiento;
+        return " {" + ", nombre: " + this.nombre + ", capacidad de tripulacion: " + this.capacidadTripulacion + ", anio de lanzamiento: " + this.anioLanzamiento;
     }
 
 @Override
