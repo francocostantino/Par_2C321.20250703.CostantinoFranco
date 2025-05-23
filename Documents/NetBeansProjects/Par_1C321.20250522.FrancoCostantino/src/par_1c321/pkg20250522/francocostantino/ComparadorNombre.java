@@ -8,7 +8,7 @@ import java.util.Comparator;
 public class ComparadorNombre implements Comparator<Nave>{
     @Override
     public int compare(Nave uno, Nave dos){
-        return uno.getNombre().compareToIgnoreCase(dos.getNombre());
+        return dos.getNombre().compareToIgnoreCase(uno.getNombre());
     }
 
    

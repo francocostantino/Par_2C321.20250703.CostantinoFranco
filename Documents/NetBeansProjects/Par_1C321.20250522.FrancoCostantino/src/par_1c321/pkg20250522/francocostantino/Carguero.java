@@ -11,7 +11,18 @@ private int capacidadCarga;
         this.capacidadCarga = capacidadCarga;
     }
 
-
+public void cargar(int kilos){
+    if(kilos<100){
+        System.out.println("la carga minima es de 100 toneladas, se establecera carga automatica");
+        this.capacidadCarga = 100;
+    } else if(kilos > 500){
+        System.out.println("carga maxima de 500 toneladas.");
+        this.capacidadCarga = 500;
+        
+    } else{
+        this.capacidadCarga = kilos;
+    }
+}
 
 @Override
    public void iniciarExploracion(){

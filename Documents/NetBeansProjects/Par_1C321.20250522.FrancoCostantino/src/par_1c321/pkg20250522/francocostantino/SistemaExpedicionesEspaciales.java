@@ -45,8 +45,10 @@ public class SistemaExpedicionesEspaciales {
                             String tipoMision = input.nextLine();
                             System.out.println("Nombre: ");
                             String nombre = input.nextLine();
+                            System.out.println("capacidad de tripulacion: ");
                             int capacidadTripulacion = input.nextInt();
                             input.nextLine();
+                            System.out.println("anio de lanzamiento: ");
                             int anioLanzamiento = input.nextInt();
                             Nave naveexploracion = new NaveExploracion(tipoMision, nombre, capacidadTripulacion, anioLanzamiento);
                             lista.agregarNave(naveexploracion);
@@ -107,7 +109,7 @@ public class SistemaExpedicionesEspaciales {
                     Collections.sort(lista.getNaves(), new ComparadorNombre());
                     break;
                 case 6: //6. Mostrar naves ordenadas por tripulacion (desc)
-                    
+                    //1Collections.sort(lista.getNaves(), new ComparadorTripulacion());
                     break;
                 case 0:
                     System.out.println("cerrando programa....");

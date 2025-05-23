@@ -34,7 +34,7 @@ public class Flota {
             System.out.println("no hay naves para mostrar");
         } else {
             for(Nave na : naves){
-                System.out.println("na");
+                System.out.println(na);
             }
         }
     }
