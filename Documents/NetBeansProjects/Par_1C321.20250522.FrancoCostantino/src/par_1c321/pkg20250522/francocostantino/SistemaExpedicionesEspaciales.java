@@ -45,6 +45,7 @@ public class SistemaExpedicionesEspaciales {
                             String tipoMision = input.nextLine();
                             System.out.println("Nombre: ");
                             String nombre = input.nextLine();
+                            
                             System.out.println("capacidad de tripulacion: ");
                             int capacidadTripulacion = input.nextInt();
                             input.nextLine();
@@ -104,11 +105,17 @@ public class SistemaExpedicionesEspaciales {
                     break;
                 case 4: //Mostrar naves ordenadas por año
                     Collections.sort(lista.getNaves());
+                    System.out.println("naves ordenadas por año");
+                    lista.mostrarNaves();
                     break;
                 case 5: //" Mostrar naves ordenadas por nombre"
                     Collections.sort(lista.getNaves(), new ComparadorNombre());
+                    System.out.println("naves ordenadas por nombre;");
+                    lista.mostrarNaves();
+                            
                     break;
                 case 6: //6. Mostrar naves ordenadas por tripulacion (desc)
+                    System.out.println("este no salio xD");
                     //1Collections.sort(lista.getNaves(), new ComparadorTripulacion());
                     break;
                 case 0:
