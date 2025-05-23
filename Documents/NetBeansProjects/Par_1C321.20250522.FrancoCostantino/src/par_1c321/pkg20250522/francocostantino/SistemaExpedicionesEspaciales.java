@@ -44,7 +44,13 @@ public class SistemaExpedicionesEspaciales {
                             System.out.println(" tipo de mision : ");
                             String tipoMision = input.nextLine();
                             System.out.println("Nombre: ");
-                            String nombre = input.nextLine();
+                            String nombre; 
+                            do{
+                                nombre = input.nextLine();
+                                if (nombre.isEmpty()){
+                                    System.out.println("este espacio debe completarse si o si");
+                                }
+                            }while(nombre.isEmpty());
                             
                             System.out.println("capacidad de tripulacion: ");
                             int capacidadTripulacion = input.nextInt();
@@ -60,8 +66,15 @@ public class SistemaExpedicionesEspaciales {
                             int capacidadCarga = input.nextInt();
                             input.nextLine();
                             System.out.println("nombre : ");
-
-                            String nombreCarguero = input.nextLine();
+                            
+                            String nombreC;
+                            do{
+                                nombreC = input.nextLine();
+                                if (nombreC.isEmpty()){
+                                    System.out.println("este espacio debe completarse si o si");
+                                }
+                            }while(nombreC.isEmpty());
+                            
                             System.out.println("capacidad de tripulacion: ");
                             int capacidadTripulacionC = input.nextInt();
                             input.nextLine();
@@ -69,7 +82,7 @@ public class SistemaExpedicionesEspaciales {
                             int anioLanzamientoC = input.nextInt();
                             input.nextLine();
 
-                            Nave carguero = new Carguero(capacidadCarga, nombreCarguero, capacidadTripulacionC, anioLanzamientoC);
+                            Nave carguero = new Carguero(capacidadCarga, nombreC, capacidadTripulacionC, anioLanzamientoC);
                             lista.agregarNave(carguero);
                             break;
 
@@ -78,7 +91,14 @@ public class SistemaExpedicionesEspaciales {
                             int cantidadPasajeroscr = input.nextInt();
                             input.nextLine();
                             System.out.println("nombre del crucero");
-                            String nombrecr = input.nextLine();
+                            String nombrecr;
+                            do{
+                                nombrecr = input.nextLine();
+                                if (nombrecr.isEmpty()){
+                                    System.out.println("este espacio debe completarse si o si");
+                                }
+                            }while(nombrecr.isEmpty());
+                            
                             System.out.println("capacidad de tripulacion: ");
                             int capacidadTripulacioncr = input.nextInt();
                             input.nextLine();
