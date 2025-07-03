@@ -26,15 +26,16 @@ public class ButacaView extends VBox {
 
         GridPane grilla = new GridPane();
         grilla.setVgap(5);
-        grilla.setHgap(5);
+        grilla.setHgap(10);
 
         //recorrer butacas
         for (int fila = 0; fila < 4; fila++) {
             for (int col = 0; col < 6; col++) {
                 Butaca b = sala.getButacas()[fila][col];
                 Button btn = new Button(b.isOcupada() ? "x" : " ");
+                btn.setMinWidth(40);
+                btn.setMinHeight(40);
                 
-
                 if (b.isOcupada()) {
                     btn.setDisable(true);
                 } else {
